@@ -18,7 +18,6 @@ def rev_string(astring, i=0):
         i += 1
         return rev_string(new_str, i)
 
-
 def rev_string_stack(astring):
     """
     Solve using stack. 
@@ -28,8 +27,6 @@ def rev_string_stack(astring):
         return
     else:
         return astring[-1] + rev_string_stack(astring[:-1])  
-  
-
 
 if __name__ == "__main__":
     import doctest

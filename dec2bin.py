@@ -3,6 +3,8 @@ def dec2bin(num):
     >>> dec2bin(6)
     '110'
     """
+    
+    
 
 
 if __name__ == "__main__":
