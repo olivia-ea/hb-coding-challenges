@@ -13,7 +13,7 @@ class Test(unittest.TestCase):
         ([1, 2, 3], 123)
     ]
 
-    def test_primes(self):
+    def test_print_recursively(self):
         for [nums, expected] in self.data:
             result = print_recursively(nums)
             self.assertEqual(result, expected)
