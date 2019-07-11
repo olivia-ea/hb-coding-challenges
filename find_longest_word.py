@@ -8,13 +8,15 @@ import unittest
 
 def find_longest_word(words):
 
-    max_len = len(words[0])
+    # max_len = len(words[0])
 
-    for word in words:
-        if len(word) > max_len:
-            max_len = len(word)
+    # for word in words:
+    #     if len(word) > max_len:
+    #         max_len = len(word)
 
-    return max_len
+    # return max_len
+
+    return max(len(word) for word in words)
 
 
 class Test(unittest.TestCase):
