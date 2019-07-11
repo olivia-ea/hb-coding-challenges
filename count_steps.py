@@ -33,15 +33,35 @@ def split_lst(lst):
 
 def count_steps(lst1, lst2):
 
-    counter = 0
-
     flst1 = split_lst(lst1)
     flst2 = split_lst(lst2)
 
-    for i in :
-        abs(steps) = flst1[i][i] - flst2[i][i]
+    counter = 0
+    i = 0
+
+    for item in lst1, lst2:
+        print(item)
+        steps = abs(flst1[i] - flst2[i])
         counter += steps
+        i += 1
     return counter
+
+
+[i - j for i, j in zip(a, b)]
+
+"""
+Alternatively, it is possible to cast the integer as a str  to split and then back to integers.
+
+lst = list(int(digit) for digit in str(12345)) //list comprehension
+
+OR
+
+lst = []
+num = 12345
+for digit in str(num):
+    lst.append(int(digit))
+
+"""
 
 
 
