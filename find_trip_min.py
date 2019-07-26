@@ -19,7 +19,18 @@ def find_trip_min(weight):
         else:
             multiple_trip.append(bag)
 
-    # multiple_trip.sort()
+    while multiple_trip > 1:
+        for bag in multiple_trip:
+            max_num = max(multiple_trip)
+            min_num = min(multiple_trip)
+            if max_num + min_num < 3:
+                num_of_trip += 1
+                multiple_trip.pop()
+                multiple_trip.pop(0)
+
+        num_of_trip += 1
+
+    return num_of_trip
 
     
 
