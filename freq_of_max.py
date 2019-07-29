@@ -1,7 +1,4 @@
-# price = [5, 4, 5, 2, 1]
-# query = [1, 2, 3, 4, 5]
-
-# output = [2, 1, 1, 1, 1]
+import unittest
 
 def find_count(max_num, array):
 
@@ -21,5 +18,15 @@ def freq_of_max(price):
     return num_freq
 
 
-# redo problem with solution that doesn't modify array 
+class Test(unittest.TestCase):
+    data = [([5, 4, 5, 3, 2], [2, 1, 1, 1, 1])
+    ]
 
+    def test_max_of_three(self):
+        for [price, expected] in self.data:
+            result = freq_of_max(price)
+            self.assertEqual(result, expected)
+
+
+if __name__ == "__main__":
+    unittest.main()
